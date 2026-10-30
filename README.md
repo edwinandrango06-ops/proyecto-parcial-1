@@ -51,10 +51,9 @@ Proyecto/
 Si deseas descargar y probar la imagen directamente desde tu repositorio en Docker Hub, ejecuta los siguientes comandos en tu terminal:
 
 ```bash
-# 1. Descargar la imagen desde tu cuenta de Docker Hub
-docker pull edwinan21/proyecto-parcial-1:latest
 
-# 2. Ejecutar el contenedor al puerto 8080
+docker pull edwinan21/proyecto-parcial-1
+
 docker run -d -p 8080:80 edwinan21/proyecto-parcial-1
 ```
 
