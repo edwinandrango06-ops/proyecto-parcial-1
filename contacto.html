@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ecuador Destino Vivo - Contacto</title>
+        <link rel="stylesheet" href="./css/estilo.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+
+        <nav id="menu">
+            <div class="menu-contenido">
+                <a href="index.html" class="logo-nombre">Ecuador Destino Vivo</a>
+                <ul class="menu-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="destinos.html">Destinos</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="paquetes.html">Paquetes</a></li>
+                    <li><a href="itinerarios.html">Itinerarios</a></li>
+                    <li><a href="contacto.html" class="activo">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="contenedor">
+
+            <section class="seccion">
+                <h2><i class="fa-solid fa-headset icono-titulo"></i> Formulario de Consultas</h2>
+                <p class="descripcion-larga">
+                    ¿Tienes dudas sobre nuestros paquetes o deseas planificar una ruta personalizada? Completa el siguiente formulario y nos pondremos en contacto contigo a la brevedad.
+                </p>
+            </section>
+
+            <hr class="separador">
+
+            <section class="seccion">
+                <form action="#" method="POST" class="formulario-contacto">
+                    
+                    <div class="grupo-formulario">
+                        <label for="nombre"><i class="fa-solid fa-user"></i> Nombre Completo:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="correo"><i class="fa-solid fa-envelope"></i> Correo Electrónico:</label>
+                        <input type="email" id="correo" name="correo" placeholder="Ej. correo@ejemplo.com" required>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="telefono"><i class="fa-solid fa-phone"></i> Teléfono / Celular:</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Ej. 0991234567" pattern="[0-9]{10}" title="Debe ingresar un número de 10 dígitos" required>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="destino"><i class="fa-solid fa-map-location-dot"></i> Destino de Interés:</label>
+                        <select id="destino" name="destino" required>
+                            <option value="" disabled selected>Seleccione un destino o paquete</option>
+                            <option value="quito">Quito Colonial</option>
+                            <option value="banos">Baños de Agua Santa</option>
+                            <option value="galapagos">Islas Galápagos</option>
+                            <option value="cuenca">Cuenca Patrimonial</option>
+                            <option value="paquete-andina">Paquete: Aventura Andina</option>
+                            <option value="paquete-insular">Paquete: Encanto Insular</option>
+                            <option value="paquete-cultura">Paquete: Cultura y Tradición</option>
+                        </select>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="mensaje"><i class="fa-solid fa-message"></i> Mensaje o Consulta:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe los detalles de tu viaje, fechas previstas o preguntas adicionales..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="boton-enviar"><i class="fa-solid fa-paper-plane"></i> Enviar Consulta</button>
+
+                </form>
+            </section>
+
+        </main>
+
+        <footer id="pie">
+            <p>&copy; 2026 Ecuador Destino Vivo/p>
+        </footer>
+
+    </body>
+</html>
